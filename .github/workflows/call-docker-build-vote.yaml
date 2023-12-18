@@ -35,7 +35,6 @@ jobs:
 
       # Only needed if with:dockerhub-enable is true below
       dockerhub-token: ${{ secrets.DOCKER_TOKEN }}
-
     with:
       ### REQUIRED
       ### ENABLE ONE OR BOTH REGISTRIES
@@ -50,6 +49,7 @@ jobs:
       image-names: |
         ghcr.io/itlinux/example-voting-app-vote
         itlinux/example-voting-app_vote
+
 
       ### REQUIRED set rules for tagging images, based on special action syntax:
       ### https://github.com/docker/metadata-action#tags-input
