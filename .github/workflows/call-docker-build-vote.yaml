@@ -40,7 +40,7 @@ jobs:
       ### ENABLE ONE OR BOTH REGISTRIES
       ### tell docker where to push.
       ### NOTE if Docker Hub is set to true, you must set secrets above and also add account/repo/tags below
-      dockerhub-enable: true
+      dockerhub-enable: false
       ghcr-enable: true
 
       ### REQUIRED
@@ -49,7 +49,6 @@ jobs:
       image-names: |
         ghcr.io/itlinux/example-voting-app-vote
         itlinux/example-voting-app_vote
-
 
       ### REQUIRED set rules for tagging images, based on special action syntax:
       ### https://github.com/docker/metadata-action#tags-input
