@@ -34,7 +34,7 @@ jobs:
       dockerhub-username: ${{ secrets.REMO1 }}
 
       # Only needed if with:dockerhub-enable is true below
-      dockerhub-token: ${{ secrets.DOCKER_TOKEN }}
+      dockerhub-token: ${{ secrets.GHRC_TOKEN }}
 
     with:
       ### REQUIRED
