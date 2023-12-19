@@ -22,7 +22,7 @@ jobs:
   call-docker-build:
     name: Result Call Docker Build
 
-    uses: itlinux/example-voting-app/.github/.github/workflows/reusable-docker-build.yaml@main
+    uses: example-voting-app/.github/.github/workflows/reusable-docker-build.yaml@main
 
     permissions:
       contents: read
